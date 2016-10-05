@@ -20,13 +20,13 @@ class AnagramatorTest  extends TestCase
             'Waldarm winden'
         ));
 
-        $this->assertFalse($anagramator->isAnagram(
+        $this->assertTrue($anagramator->isAnagram(
             $source,
             'Mandel war Wind'
         ));
 
         $this->assertFalse($anagramator->isAnagram(
-            $souece,
+            $source,
             'Wann man Wilden'
         ));
 
